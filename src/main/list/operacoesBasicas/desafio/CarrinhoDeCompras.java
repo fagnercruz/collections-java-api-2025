@@ -38,11 +38,19 @@ public class CarrinhoDeCompras {
         carrinho.exibirLista();
         System.out.println(carrinho.calcularValorTotal());
         System.out.println("---");
-        carrinho.adicionarItem(new Item("Macarrão",2.49, 3));
-        carrinho.adicionarItem(new Item("Feijão", 6.89, 5));
+        Item item1 = new Item("Macarrão",2.49, 3);
+        Item item2 = new Item("Feijão", 6.89, 5);
+        carrinho.adicionarItem(item1);
+        carrinho.adicionarItem(item2);
         carrinho.exibirLista();
         System.out.println(carrinho.calcularValorTotal());
         System.out.println("---");
+        carrinho.removerItem(item1);
+        carrinho.exibirLista();
+        System.out.println(carrinho.calcularValorTotal());
+        System.out.println("---");
+
+
 
     }
 
